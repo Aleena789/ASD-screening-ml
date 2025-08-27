@@ -10,41 +10,41 @@ Data Overview
 - Features: A1-A10(binary, age,sex,jaundice,family_asd(categorical)
 - Target: Class(Yes= Autism, no= no autism)
 
-Methodology:
+Methodology
 
--Exploratory Data Analysis (EDA):
+Exploratory Data Analysis (EDA):
  -Explored the screening features and the dependencies between the features.
  -Visualized class imbalance.
  -Identified potential predictors (all of them were important).
 
--Data Preprocessing:
+Data Preprocessing
  -No missing values.
  -Encoded categorical variables.
  -Attempted random oversampling to balance classes, but found it led to potential overfitting. Final results are reported without oversampling for fairness.
 
--Modeling:
+Modeling
  -Trained multiple classifiers (Logistic Regression and Random Forest).
  -Evaluated using precision, recall, F1-score, Average Precision and PR curves.
 
--Evaluation Metrics:
+Evaluation Metrics
  -In healthcare settings, false negatives (failing to detect ASD) can be more harmful than false positives.
  -Precision & Recall provide better insight than accuracy alone.
  -F1-score (harmonic mean of precision and recall) balances both.
  -Average Precision (AP) summarizes the area under the Precision-Recall curve.
 
--Visualizations included:
+Visualizations included
  -Classification report and PR curve of both the classifiers in the graphs and report folder.
 
--Result:
+Result
  -Logistic Regression being the baseline model still had an AP of 0.97 indicating simple models are effective.
  -Random Forest achieved an AP of 0.99 showing ability to detect asd while having high precision.
  -to be noted: such high results might be due to overfitting
 
--Limitations:
+-Limitations
  -Dataset is small and imbalanced.
  -The dataset might not be diverse enough.
 
--Further improvemnts:
+Further improvemnts:
  -try additonal models
  -collect more diverse data.
 
