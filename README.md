@@ -12,43 +12,41 @@ Data Overview
 
 Methodology:
 
-1.Exploratory Data Analysis (EDA):
--Explored the screening features and the dependencies between the features.
--Visualized class imbalance.
--Identified potential predictors (all of them were important).
+-Exploratory Data Analysis (EDA):
+ -Explored the screening features and the dependencies between the features.
+ -Visualized class imbalance.
+ -Identified potential predictors (all of them were important).
 
-Data Preprocessing:
+-Data Preprocessing:
+ -No missing values.
+ -Encoded categorical variables.
+ -Attempted random oversampling to balance classes, but found it led to potential overfitting. Final results are reported without oversampling for fairness.
 
--No missing values.
--Encoded categorical variables.
--Attempted random oversampling to balance classes, but found it led to potential overfitting. Final results are reported without oversampling for fairness.
+-Modeling:
+ -Trained multiple classifiers (Logistic Regression and Random Forest).
+ -Evaluated using precision, recall, F1-score, Average Precision and PR curves.
 
-Modeling:
+-Evaluation Metrics:
+ -In healthcare settings, false negatives (failing to detect ASD) can be more harmful than false positives.
+ -Precision & Recall provide better insight than accuracy alone.
+ -F1-score (harmonic mean of precision and recall) balances both.
+ -Average Precision (AP) summarizes the area under the Precision-Recall curve.
 
--Trained multiple classifiers (Logistic Regression and Random Forest).
--Evaluated using precision, recall, F1-score, Average Precision and PR curves.
+-Visualizations included:
+ -Classification report and PR curve of both the classifiers in the graphs and report folder.
 
-Evaluation Metrics:
--In healthcare settings, false negatives (failing to detect ASD) can be more harmful than false positives.
--Precision & Recall provide better insight than accuracy alone.
--F1-score (harmonic mean of precision and recall) balances both.
--Average Precision (AP) summarizes the area under the Precision-Recall curve.
+-Result:
+ -Logistic Regression being the baseline model still had an AP of 0.97 indicating simple models are effective.
+ -Random Forest achieved an AP of 0.99 showing ability to detect asd while having high precision.
+ -to be noted: such high results might be due to overfitting
 
-Visualizations included:
-Classification report and PR curve of both the classifiers in the graphs and report folder.
+-Limitations:
+ -Dataset is small and imbalanced.
+ -The dataset might not be diverse enough.
 
-Result:
--Logistic Regression being the baseline model still had an AP of 0.97 indicating simple models are effective.
--Random Forest achieved an AP of 0.99 showing ability to detect asd while having high precision.
-- to be noted: such high results might be due to overfitting
+-Further improvemnts:
+ -try additonal models
+ -collect more diverse data.
 
-Limitations:
--Dataset is small and imbalanced.
--The dataset might not be diverse enough.
-
-Further improvemnts:
--try additonal models
--collect more diverse data.
-
-All steps from EDA to model training and evaluation, are included in the ASD_screening.ipynb notebook.
-For detailed visualisation please refer to the notebook.
+-All steps from EDA to model training and evaluation, are included in the ASD_screening.ipynb notebook.
+-For detailed visualisation please refer to the notebook.
