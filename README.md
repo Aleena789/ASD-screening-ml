@@ -38,6 +38,7 @@ Visualizations included:
 Classification report and PR curve of both the classifiers in the graphs and report folder.
 
 Result:
+-Logistic Regression being the baseline model still had an AP of 0.97 indicating simple models are effective.
 -Random Forest achieved an AP of 0.99 showing ability to detect asd while having high precision.
 - to be noted: such high results might be due to overfitting
 
