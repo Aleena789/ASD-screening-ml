@@ -30,7 +30,7 @@ Methodology
   - Precision & Recall provide better insight than accuracy alone.
   - F1-score (harmonic mean of precision and recall) balances both.
   - Average Precision (AP) summarizes the area under the Precision-Recall curve.
-  - Visualizations included
+  - Visualizations included in the GRAPHS AND REPORT folder
   - Classification report and PR curve of both the classifiers in the graphs and report folder.
 Result
   - Logistic Regression being the baseline model still had an AP of 0.97 indicating simple models are effective.
