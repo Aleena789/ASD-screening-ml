@@ -12,7 +12,7 @@ Data Overview
 
 Methodology
 
-Exploratory Data Analysis (EDA):
+-Exploratory Data Analysis (EDA):
  -Explored the screening features and the dependencies between the features.
  
  -Visualized class imbalance.
