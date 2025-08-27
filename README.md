@@ -11,10 +11,8 @@ Data Overview
 - Target: Class(Yes= Autism, no= no autism)
 
 Methodology
-
-Exploratory Data Analysis (EDA):
-
- -Explored the screening features and the dependencies between the features.
+- Exploratory Data Analysis (EDA):
+  - Explored the screening features and the dependencies between the features.
  
  -Visualized class imbalance.
  
