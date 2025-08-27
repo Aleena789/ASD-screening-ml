@@ -14,7 +14,9 @@ Methodology
 
 Exploratory Data Analysis (EDA):
  -Explored the screening features and the dependencies between the features.
+ 
  -Visualized class imbalance.
+ 
  -Identified potential predictors (all of them were important).
 
 Data Preprocessing
